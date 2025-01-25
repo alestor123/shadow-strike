@@ -1,0 +1,11 @@
+body {
+    font-family: 'Staatliches', sans-serif;
+    background-color: #121212;
+    color: white;
+}
+
+.main {
+    text-align: center;
+    padding: 20px;
+    /* Add more styles for the main content */
+}

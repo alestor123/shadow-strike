@@ -1,0 +1,280 @@
+/* Global body styles */
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Staatliches', sans-serif;
+    overflow: hidden;  /* Ensure no content overflows */
+    transition: all 1s ease;
+}
+
+/* Splash screen styles */
+/* Game message styles */
+.game-message {
+    position: absolute;
+    left: 0;
+    top: 30%; /* 30% from the top of the screen */
+    width: 35%; /* Reduced the width slightly */
+    color: white;
+    text-align: left;
+    font-size: 1.25rem;  /* Reduced font size */
+    z-index: 2;
+    padding-left: 20px;
+}
+
+.game-message h2 {
+    font-size: 1.75rem;  /* Reduced the size of the heading */
+    margin-bottom: 20px;
+    color: red;
+    text-shadow: 0 0 5px #ff0000, 0 0 10px #8b0000, 0 0 15px #8b0000;
+}
+
+.game-message p {
+    font-size: 1.1rem;  /* Reduced the size of the paragraph text */
+    color: red;
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px #ff0000, 0 0 10px #8b0000, 0 0 15px #8b0000;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: red;
+    text-shadow: 0 0 5px #ff0000, 0 0 10px #8b0000, 0 0 20px #8b0000;
+    background: linear-gradient(to bottom, red, darkred);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    margin: 0 0 20px 0;
+}
+
+p {
+    font-size: 1.5rem;
+    color: red;
+    text-shadow: 0 0 5px #ff0000, 0 0 10px #8b0000, 0 0 15px #8b0000;
+    margin: 0;
+}
+
+/* Hide .main content initially */
+.pagef {
+    display: none;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    padding: 20px;
+}
+
+.loading-bar {
+    margin-top: 20px;
+    width: 80%;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #555;
+    box-shadow: 0 0 10px #8b0000;
+    position: relative;
+}
+
+.loading-bar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background: red;
+    box-shadow: 0 0 5px 2px #8b0000;
+    animation: loading 3s infinite;
+}
+
+@keyframes loading {
+    0% { width: 0%; }
+    50% { width: 50%; }
+    100% { width: 100%; }
+}
+
+/* Background video styles */
+#bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;  /* Ensure the video spans the entire width of the screen */
+    height: 100%; /* Ensure the video spans the entire height of the screen */
+    object-fit: cover; /* Makes sure the video covers the screen without distorting */
+    z-index: -1; /* Keeps the video in the background */
+}
+
+/* Game message styles */
+/* Game message styles */
+.game-message {
+    position: absolute;
+    font-family: 'Orbitron', sans-serif; /* Use Orbitron font */
+    left: 0;
+    top: 30%; /* 30% from the top of the screen */
+    width: 30%; /* Takes up 30% of the width of the screen */
+    color: white;
+    text-align: left; /* Align text to the left */
+    font-size: 1.5rem;
+    z-index: 2;
+    padding-left: 20px;
+}
+
+.game-message p h2 {
+    font-family: 'Orbitron', sans-serif; /* Use Orbitron font */
+}
+.game-message h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: red;
+    text-shadow: 0 0 5px #ff0000, 0 0 10px #8b0000, 0 0 15px #8b0000;
+}
+
+.game-message p {
+    font-size: 1.25rem;
+    color: red;
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px #ff0000, 0 0 10px #8b0000, 0 0 15px #8b0000;
+}
+
+/* Download buttons */
+.download-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #ff0000, #8b0000);
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+    background: linear-gradient(45deg, #8b0000, #ff0000);
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+.download-btn i {
+    margin-right: 10px;
+}
+
+/* Specific button styles */
+.app-store {
+    background: #2d2d2d; /* Dark background for App Store button */
+}
+
+.play-store {
+    background: #34b7f1; /* Play Store blue */
+}
+
+.steam {
+    background: #171a21; /* Steam dark background */
+}
+
+/* Smaller Gradient Button Styles */
+.play-btn {
+    font-size: 1.2rem; /* Reduced font size */
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px; /* Reduced padding */
+    border-radius: 8px; /* Slightly smaller border-radius */
+    text-align: center;
+    box-shadow: 0 0 8px #8b0000;
+    transition: all 0.3s ease;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-btn:hover {
+    opacity: 0.8;
+}
+
+.play-btn i {
+    margin-right: 8px; /* Reduced space between icon and text */
+}
+
+/* Gradient color buttons for each platform */
+.playstore {
+    background: linear-gradient(135deg, #0e76a8, #084e74); /* PlayStore gradient */
+}
+
+.appstore {
+    background: linear-gradient(135deg, #1d8cf8, #1a74c3); /* AppStore gradient */
+}
+
+.steam {
+    background: linear-gradient(135deg, #1b2838, #3b4b5e); /* Steam gradient */
+}
+
+.windows {
+    background: linear-gradient(135deg, #00a4ef, #006ab6); /* Windows gradient */
+}
+
+.linux {
+    background: linear-gradient(135deg, #33cc33, #1a8a1a); /* Linux gradient */
+}
+
+
+
+
+
+
+/* Ensure .pagef covers the entire screen */
+.pagef {
+    display: none;
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    padding: 20px;
+    height: 100vh;  /* Ensure it covers the entire viewport height */
+    width: 100%;    /* Ensure it covers the full width of the screen */
+}
+
+/* Center content inside .pagef */
+.pagef .game-message {
+    position: absolute;
+    top: 60%;   /* Vertically center the message */
+    left: 15%;  /* Horizontally center the message */
+    transform: translate(-50%, -50%);  /* Adjust for exact centering */
+    color: white;
+    text-align: center;
+    z-index: 2;
+    font-size: 1.5rem;
+}
+.pagef h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: red;
+    text-shadow: 0 0 5px #ff0000, 0 0 10px #8b0000, 0 0 15px #8b0000;
+}
+
+.pagef p {
+    font-size: 1.25rem;
+    color: red;
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px #ff0000, 0 0 10px #8b0000, 0 0 15px #8b0000;
+}
+
+/* Background video styles */
+#bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;  /* Ensure the video spans the entire width of the screen */
+    height: 100%; /* Ensure the video spans the entire height of the screen */
+    object-fit: cover; /* Makes sure the video covers the screen without distorting */
+    z-index: -1; /* Keeps the video in the background */
+}

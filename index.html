@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./public/assets/icon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/styles/App.css">
+    <link rel="stylesheet" href="./public/styles/footer.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Shadow Strike: Apex Ops</title>
+</head>
+<body>
+    <!-- Tailwind CSS Navbar -->
+    <nav id="navbar" class="bg-gradient-to-r from-red-600 to-darkred py-4 px-6 fixed w-full z-10 top-0 left-0 hidden">
+        <div class="flex items-center justify-between">
+            <a href="#" class="text-white text-3xl font-bold">
+                Shadow Strike
+            </a>
+            <div class="space-x-6">
+                <a href="#features" class="text-white hover:text-gray-200">NEWS <i class="fa fa-newspaper"></i></a>
+                <a href="#about" class="text-white hover:text-gray-200">CAREERS <i class="fa fa-briefcase"></i></a>
+                <a href="#contact" class="text-white hover:text-gray-200">SUPPORT <i class="fa fa-life-ring"></i></a>
+                <a href="#contact" class="text-white hover:text-gray-200">ABOUT US <i class="fa fa-info-circle"></i></a>
+                <a href="https://www.example.com" class="bg-white text-red-600 px-4 py-2 rounded-lg hover:bg-red-600 hover:text-white transition duration-300">Download <i class="fa fa-download"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Splash screen -->
+    <div class="splash-screen">
+        <h1 class="title">Defend the Future</h1>
+        <p>Prepare for an adrenaline-fueled mission...</p>
+        <div class="loading-bar"></div>
+    </div>
+
+    <!-- Main content (used as background after splash screen) -->
+    <div class="pagef" id="pagef-content">
+        <video autoplay muted loop id="bg-video">
+            <source src="./public/assets/videos/background/batman.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="game-message">
+            <h2>Ready to Defend the Future?</h2>
+            <p>Download now and jump into the action!</p>
+        
+            <div class="download-buttons">
+                <a href="https://www.example.com" class="btn download-btn app-store" target="_blank">
+                    <i class="fab fa-apple"></i> App Store
+                </a>
+                <a href="https://www.example.com" class="btn download-btn play-store" target="_blank">
+                    <i class="fab fa-google-play"></i> Play Store
+                </a>
+                <a href="https://www.example.com" class="btn download-btn steam" target="_blank">
+                    <i class="fab fa-steam"></i> Steam
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="./public/scripts/splash.js"></script>
+</body>
+</html>
